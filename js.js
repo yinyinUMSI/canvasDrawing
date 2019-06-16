@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded",function(){
 	var penColor = "#ff0000"
 	var penPicked = false;
 	var colorPicker = document.getElementById("colorpicker");
+	var canvasOne = document.getElementById("canvas");
 	canvas.onmousemove = (e) => {
 		console.log("move");
 		var x = e.clientX;
@@ -45,6 +46,10 @@ document.addEventListener("DOMContentLoaded",function(){
 		else if(e.keyCode === 89) {
 			console.log("y pressed");
 			penColor = "#ffff00";
+		}
+		else if(e.keyCode === 82) {
+			console.log("r pressed");
+			penColor = "#ff0000";
 		}
 		else if(e.keyCode === 38) {
 			console.log("arrowUp pressed");
