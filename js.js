@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded",function(){
 	var penColor = "#ff0000"
 	var penPicked = false;
 	var colorPicker = document.getElementById("colorpicker");
-	var canvasOne = document.getElementById("canvas");
+
 	canvas.onmousemove = (e) => {
 		console.log("move");
 		var x = e.clientX;
